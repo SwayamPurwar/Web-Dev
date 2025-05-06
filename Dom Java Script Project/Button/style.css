@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "evil empire";
+}
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+button{
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 25px;
+    background-color: white;
+  
+
+    
+
+}
+
+button:active{
+    scale: 0.95;
+
+}

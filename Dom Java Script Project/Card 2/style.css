@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #F0F3F8;
+
+}
+
+.main{
+    background-color: #EEF0F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .photo .down{
+    transform: translate(0px, -25px);
+}
+
+.card{
+    text-align: center;
+    width: 400px;
+    background-color: #FFFFFF;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.card .down{
+    
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    object-fit: cover;
+    border: 5px solid white;
+    object-fit: cover;
+    object-position: center;
+
+    
+}
+
+.card .up{
+    height: 150px;
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 10px;
+    margin-left: 10px;
+   
+   
+}
+
+.card .detail{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+h2{
+    margin-bottom: 15px;
+
+}
+
+h3{
+    margin-bottom: 7px;
+    color: #9EA7AB;
+    font-weight: 100;
+    font-size: 16px;
+
+}
+h4{
+    margin-bottom: 14px;
+    color: #768489;
+    padding: 0 60px;
+}
+.detail h5{
+    font-size: 20px;
+    margin-bottom: 2px;
+    
+}
+
+.line{
+    height: 2px;
+    width: 80px;
+    background-color: black;
+    margin: 20px auto;
+}
+.detail{
+    margin-top: 50px;
+}
+
+.detail .c{
+    color: #8e9191;
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-weight: 100;
+}

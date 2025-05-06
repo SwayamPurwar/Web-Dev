@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+}
+
+
+h2{
+    font-size: 45px;
+    font-weight: 700;
+}
+
+h1{
+    padding: 35px 55px;
+    font-size: 30px;
+    font-weight: 900;
+    background-color: aquamarine;
+    border: 2px solid white;
+    border-radius: 22px;
+}
+
+
+button{
+    padding: 10px 15px;
+    color: black;
+    border: none;
+    background-color: white;
+    border: 2px solid lightseagreen;
+    font-size: 15px;
+    border-radius: 5px;
+
+}
+
+
+button:active{
+    scale: 0.95;
+}

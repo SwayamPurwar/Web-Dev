@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "evil empire";
+}
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+h1{
+    background-color: lightblue;
+    padding: 20px 30px;
+    border-radius: 20px;
+    font-weight: 100;
+    font-size: 34px;
+}

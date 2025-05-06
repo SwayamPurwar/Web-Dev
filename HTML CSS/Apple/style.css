@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: 15%;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    height: 30%;
+    align-items: center;
+    background-color: #F5F5F7;
+    
+}
+
+.nav a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #000000;
+}
+.nav i{
+    color: #000000;
+}
+.img{
+    background-image: url(https://www.apple.com/v/iphone-16-pro/a/images/overview/welcome/hero_endframe__b3cjfkquc2s2_medium_2x.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 95%;
+    position: absolute;
+    bottom: 0%;
+
+}

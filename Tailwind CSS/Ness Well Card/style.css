@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+} 
+.hero{
+    font-family: Darleston;
+ }
+ .hero2{
+    font-family: Cocorute;
+ }
+.main{
+   background-image: url(https://www.bing.com/images/blob?bcid=r9l5mUJmvcAHaA);
+   background-position: center;
+   background-size: cover;
+ }
+ .hero3{
+    font-family: BattlesbridgeDemoRegular;
+ }

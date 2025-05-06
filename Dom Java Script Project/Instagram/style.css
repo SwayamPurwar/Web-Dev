@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    height: 600px;
+    width: 350px;
+    background: white;
+    border-radius: 10px;
+    position: relative;
+    background-color: black;
+    border: 2px solid black;
+    overflow: auto;
+}
+.card::-webkit-scrollbar{
+    display: none;
+}
+
+.story{
+    padding: 10px;
+
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.story::-webkit-scrollbar{
+    display: none;
+}
+
+.stories{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 3px;
+    background: linear-gradient(to right bottom ,red,rgb(219, 80, 103),purple);
+    margin-left: 5px;
+}
+
+.stories h5{
+    font-size: 12px;
+    font-weight: 200;
+    margin-left: 10px;
+    color: white;
+}
+
+.stories img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.full{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 10px;
+    display: none;
+    background-size: cover;
+    background-position:center ;
+}
+
+.icon{
+    margin-top: 10px;
+    padding:0px 10px;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.icon .insta{
+    height:70px;
+    width: 140px;
+}
+
+.icon-right{
+    display: flex;
+    gap: 12px;
+    font-size: 20px;
+}
+
+.growths{
+    padding: 25px 20px;
+}
+
+.growth{
+    height: 5px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgba(216, 216, 216, 0.307);
+}
+
+.progress{
+    height: 5px;
+    width: 0%;
+    border-radius: 5px;
+    background-color: rgba(216, 216, 216, 0.448);
+}
+
+.growths h2{
+    font-size: 22px;
+    margin: 10px 0;
+    font-weight: 400;
+    font-family: "Dragon Hunter";
+    color: rgba(216, 216, 216, 0.954);
+}
+
+.post{
+    width: 100%;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.post .logo{
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    justify-content: space-between;
+}
+
+.post .logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.logoimg{
+    background-color: #fff;
+    height: 33px;
+    width: 33px;
+    border-radius: 50%;
+    padding: 2px;
+    background: linear-gradient(to right bottom ,red,rgb(219, 80, 103),purple);
+}
+
+.post h5{
+    padding: 10px 10px;
+}
+
+.post img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.imagestatus{
+    width: 100%;
+    padding: 3px 10px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-bottom: 4px;
+}
+
+.logo .dot{
+    display: flex;
+    align-items: center;
+
+}
+
+.logo  .dotss{
+    height: 10px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.dots{
+    height: 3px;
+    width: 3px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.post h4{
+    padding: 0px 10px;
+}
+
+.count p{
+    padding: 0px 10px;
+    font-size: 14px;
+}
+
+.span{
+    font-size: 12px;
+    font-weight: 200;
+    color: rgb(183, 175, 175);
+    padding-left: 5px;
+}
+
+.count h5{
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 200;
+    color: rgb(183, 175, 175);
+}
+
+.count h6{
+    padding: 5px 10px;
+    font-size: 10px;
+    font-weight: 200;
+    color: rgb(183, 175, 175);
+}
+
+.count .spanp{
+    font-weight: 900;
+}
+
+h6 span{
+    font-size: 10px;
+    font-weight: 200;
+    color: white;
+}
+
+.count .font{
+    color: #fff;
+}

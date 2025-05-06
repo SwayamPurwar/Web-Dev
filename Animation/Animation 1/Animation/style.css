@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: absolute;
+    animation-name: moves;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes moves{
+    0%{
+       left: 0;
+       top: 0;
+    }
+    20%{
+        left: 20%;
+        top: 20%;
+    }
+    40%{
+        left: 40%;
+        top: 0%;
+    }
+    60%{
+        left: 60%;
+        top: 20%;
+    }
+    80%{
+        left: 80%;
+        top: 00%;
+    }
+    100%{
+        left: 100%;
+        top: 20%;
+    }
+}
+
+
+.box1{
+    margin-top: 35%;
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 20px 20px;
+    font-size: 80px;
+}
+
+.box1 h1{
+    padding: 0px 20px;
+    text-transform: uppercase;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  
+  
+}
+
+@keyframes move{
+    to{
+        transform: translateX(0);
+    }
+    from{
+        transform: translateX(-100%);
+    }
+    
+}
+
+
+
+
+
+.box2{
+  margin-top: 150px;
+  margin-left: 700px;
+  
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: crimson;
+ 
+    animation-name: move2 ;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes move2 {
+    0%{
+    border-radius: 0%;
+    height: 100px;
+    width: 100px;
+    
+ }
+ 25%{
+    border-radius: 25%;
+    height: 125px;
+    width: 125px;
+
+ }
+ 50%{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    transform: rotate(360deg);
+
+    
+
+ }
+ 75%{
+    border-radius: 25%;
+    height: 175px;
+    width: 175px;
+    transform: rotate(-360deg);
+  
+
+ }
+ 100%{
+    border-radius: 0%;
+    height: 200px;
+    width: 200px;
+ }
+    
+}

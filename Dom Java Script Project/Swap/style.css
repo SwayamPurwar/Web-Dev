@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+
+.img1{
+    height: 400px;
+    width: 400px;
+    border-radius: 13px;
+    object-fit: cover;
+}
+.img2{
+    height: 400px;
+    width: 400px;
+    border-radius: 13px;
+    object-fit: cover;
+}
+
+
+button{
+    margin: 20px 30px ;
+    padding: 20px 30px;
+    background-color: lightseagreen;
+    border: none;
+    border-radius: 13px;
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+    transition: all ease 0.3s;
+}
+
+button:active{
+    scale: 0.95;
+}

@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+h1:hover i{
+    opacity: 1; 
+    color: black;
+    
+}
+.grad{
+    background: linear-gradient(rgb(255, 79, 79), #f898a8);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.cards:hover h1{
+    border: transparent;
+}  
+

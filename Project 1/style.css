@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "evil empire";
+}
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+
+/*.main{
+   background-image: url(https://c4.wallpaperflare.com/wallpaper/859/637/144/digital-art-artwork-video-games-assassin-s-creed-wallpaper-preview.jpg);
+}*/
+
+.cards > .card1{
+    background-image: url(https://static.independent.co.uk/2022/09/02/11/Asssassins%20Creed%20mirage.png);
+    background-position: center;
+    background-size: cover;
+}   
+.cards > .card3{
+    background-image: url(https://m.media-amazon.com/images/M/MV5BZjdiYjJmNDgtYzgxMS00Njk4LWEzZmMtNmVjYWNjNDJkZjViXkEyXkFqcGc@._V1_.jpg);
+    background-position: center;
+    background-size: cover;
+}       
+.cards > .card4{
+    background-image: url(https://cdnb.artstation.com/p/assets/images/images/013/570/277/4k/margaux-doury-artblast-fullsize-kassandra-md-web.jpg?1540219525);
+    background-position: center;
+    background-size: cover;
+}   
+.cards > .card5{
+    background-image: url(https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blta1f7a072be2c28dc/667db6c8eb11bbe4dd0f0b9f/asscreed_shadows.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.cards > .card2{
+    background-image: url(https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/Jrd6jPjiw2gh3Ey2YMopS/45e7aeb66a6ad2ce0541932c8ae9dc8e/DoR_KEYART_FINAL_EdgeEffect_1920x1080.png);
+    background-position: center;
+    background-size: cover;
+}      
+.text > h1{
+    font-family: "knight warrior";
+}
+.text > h6{
+    font-family: "dragon hunter";
+}

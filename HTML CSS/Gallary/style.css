@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#bg{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 234, 207);
+}
+
+img{
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+#img1{
+    left: 25%;
+}
+
+#img2{
+    left: 50%; 
+}
+
+#img3{
+    left: 75%;
+}
+
+img:hover{
+    height: 60%;
+    
+}

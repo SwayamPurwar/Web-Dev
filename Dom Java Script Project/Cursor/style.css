@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "evil empire";
+}
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+
+
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cursor{
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+
+}
+
+h1{
+    color: #fff;
+    position: absolute;
+    font-size: 200px;
+    transition: all ease 0.5s;
+    mix-blend-mode: difference;
+
+}

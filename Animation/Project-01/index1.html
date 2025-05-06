@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marvel</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #000;
+        color: white;
+      }
+
+      nav {
+        background-color: #ff0000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 30px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+      }
+
+      .logo {
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+      }
+
+      .logo .img-logo {
+        height: 40px;
+
+        margin-right: 10px;
+      }
+
+      .tags {
+        text-decoration: none;
+        display: flex;
+        gap: 100px;
+        margin-right: 100px;
+        font-family: "x";
+        font-size: 40px;
+        color: white;
+      }
+
+      .tags a {
+        text-decoration: none;
+        color: #e1dede;
+      }
+
+      @font-face {
+        font-family: "x";
+        src: url("./CombackHomeRegular-jEMd9.ttf");
+      }
+
+      @font-face {
+        font-family: "y";
+        src: url("./MarvelRegular-Dj83.ttf");
+      }
+
+      h1 {
+        padding: 30px 100px;
+        font-size: 120px;
+        font-family: "y";
+        font-weight: 100;
+        letter-spacing: 5px;
+        background: linear-gradient(to right, #ffff, #ff0000, #0000ff, #ffff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      p {
+        color: #dadada;
+        margin-left: 4%;
+
+        font-size: 20px;
+        line-height: 1.6;
+
+        margin-top: 20px;
+      }
+
+      .page1 {
+        height: 100vh;
+        width: 100vw;
+      }
+      .page2 {
+        height: 100vh;
+        width: 100vw;
+      }
+
+      .page2 img {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="overlayer">
+      <div class="page1">
+        <nav>
+          <div class="logo">
+            <img
+              class="img-logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Marvel_Logo.svg"
+              alt="Marvel Logo"
+            />
+          </div>
+          <div class="tags">
+            <a class="link" href="#">Home</a>
+            <a class="link" href="#">Heroes</a>
+            <a class="link" href="#">Comics</a>
+            <a class="link" href="#">Movies</a>
+            <a class="link" href="#">Contact</a>
+          </div>
+        </nav>
+
+        <h1>
+          ENTER THE MARVEL UNIVERSE: <br />
+          HEROES, VILLAINS, AND BEYOND
+        </h1>
+
+        <p>
+          Welcome to the extraordinary world of Marvel, where legends are born,
+          heroes rise, and epic battles shape the fate of the universe. <br />
+          From the courageous Avengers to the mighty X-Men, Marvel brings you
+          unforgettable stories of bravery, friendship, and sacrifice. <br />
+          Dive into thrilling adventures, discover powerful characters, and
+          experience the magic that has captured hearts across generations. The
+          Marvel Universe <br />is more than just stories — it's a celebration
+          of hope, resilience, and the hero within us all.
+        </p>
+
+        <button>Explore Now</button>
+    <style>
+      button {
+        margin-top: 40px;
+        margin-left: 100px;
+        padding: 15px 40px;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #ff0000;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(255, 0, 0, 0.5);
+      }
+
+      button:hover {
+        background-color: #e60000;
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgba(255, 0, 0, 0.7);
+      }
+    </style>
+      </div>
+
+      <div class="page2">
+        <img src="https://wallpapercave.com/wp/wp4488004.jpg" alt />
+      </div>
+    </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"
+      integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js"
+      integrity="sha512-AcqPGqrrAEtEwe+ADO5R8RbdFi7tuU7b/A2cJJH0Im0D18NRk5p5s4B3E5PMuO81KFw0ClN7J5SHVUJz7KOb0A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+      const time = gsap.timeline();
+
+      time.from("h1", {
+        duration: 1,
+        y: 50,
+        opacity: 0,
+        stagger: 1,
+      });
+
+      time.from("p", {
+        duration: 2,
+        y: 50,
+        opacity: 0,
+        stagger: 1,
+      });
+
+      // Animate .tags a links entrance
+      time.from(".tags a", {
+        duration: 1,
+        y: -20,
+        opacity: 0,
+        stagger: 0.2,
+        ease: "power2.out"
+      });
+
+      // Animate button fade in and slide up after paragraph
+      time.from("button", {
+        duration: 1,
+        y: 30,
+        opacity: 0,
+        ease: "power2.out"
+      });
+
+      // Animate logo with scale and rotation on page load
+      gsap.from(".img-logo", {
+        duration: 1,
+        scale: 0,
+        rotate: 360,
+        ease: "back.out(1.7)"
+      });
+
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".page2",
+          markers: true,
+          start: "top 40%",
+          end: "top 20%",
+          scrub: 1,
+          pin: true,
+          //  scrollTrigger:{
+          //     trigger:".page2",
+          //     start:'top 0%',
+          //     end:"top -100%",
+          //     scrub:1
+
+          //  }
+        },
+      });
+
+      tl.to(".page2 img", {
+        scale: 1.2,
+        duration: 2,
+        ease: "power2.out",
+      });
+    </script>
+  </body>
+</html>
